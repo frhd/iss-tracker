@@ -12,6 +12,7 @@
 		C40424CB1B9659EF008E6D80 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C40424CA1B9659EF008E6D80 /* Images.xcassets */; };
 		C40424CE1B9659EF008E6D80 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40424CC1B9659EF008E6D80 /* MainMenu.xib */; };
 		C40424DA1B9659EF008E6D80 /* iss_trackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C40424D91B9659EF008E6D80 /* iss_trackerTests.m */; };
+		C40424E41B97A637008E6D80 /* iss.png in Resources */ = {isa = PBXBuildFile; fileRef = C40424E31B97A637008E6D80 /* iss.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		C40424D31B9659EF008E6D80 /* iss-trackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iss-trackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40424D81B9659EF008E6D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C40424D91B9659EF008E6D80 /* iss_trackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iss_trackerTests.m; sourceTree = "<group>"; };
+		C40424E31B97A637008E6D80 /* iss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iss.png; path = ../../../../../Downloads/iss.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C40424C41B9659EF008E6D80 /* Info.plist */,
+				C40424E31B97A637008E6D80 /* iss.png */,
 				C40424C81B9659EF008E6D80 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -193,6 +196,7 @@
 			files = (
 				C40424CB1B9659EF008E6D80 /* Images.xcassets in Resources */,
 				C40424CE1B9659EF008E6D80 /* MainMenu.xib in Resources */,
+				C40424E41B97A637008E6D80 /* iss.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +405,7 @@
 				C40424DF1B9659EF008E6D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C40424E01B9659EF008E6D80 /* Build configuration list for PBXNativeTarget "iss-trackerTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +414,7 @@
 				C40424E21B9659EF008E6D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
