@@ -76,30 +76,6 @@
     });
 }
 
-- (void)changeWallpaperWithImagePath:(NSString *)path {
-    
-    //If NinjaModes directory does not exist, assume not interested.
-    if (![[NSFileManager defaultManager] fileExistsAtPath:[@"~/Documents/NinjaModes" stringByExpandingTildeInPath]]) {
-        return;
-    }
-    
-    NSError *error;
-    [[NSWorkspace sharedWorkspace] setDesktopImageURL:[NSURL fileURLWithPath:path]
-                                            forScreen:[NSScreen mainScreen]
-                                              options:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       nil, NSWorkspaceDesktopImageFillColorKey,
-                                                       [NSNumber numberWithBool:NO], NSWorkspaceDesktopImageAllowClippingKey,
-                                                       [NSNumber numberWithInteger:NSImageScaleProportionallyUpOrDown], NSWorkspaceDesktopImageScalingKey, nil]
-                                                error:&error];
-    if (error) {
-        [[NSApplication sharedApplication] presentError: error
-                                         modalForWindow: self.window
-                                               delegate: nil
-                                     didPresentSelector: nil
-                                            contextInfo: NULL];
-    }
-}
-
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     //Attempt to restore things back the way we found them
     [self makeItBright];}
